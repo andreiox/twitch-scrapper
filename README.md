@@ -1,41 +1,41 @@
 # twitch-scrapper
 
-## **Descrição**
+## **Description**
 
-Esse cara é responsável por varrer a twitch, pegar os clips mais assistidos e fazer download dos mesmos.
+Get most viewed clips on twitch and downloads them
 
 ## **Instalação**
 
-**Passo 1** - Crie um virtualenv com python 3.6
+**Passo 1** - Create a virtualenv
 
 ```shell
 virtualenv --python=/usr/local/bin/python3.6 venv
 ```
 
-**Passo 2** - Ative o virtualenv criado
+**Passo 2** - Activate the virtualenv
 
 ```shell
 source venv/bin/activate
 ```
 
-**Passo 3** - Instale as dependencias via o arquivo requirements.txt
+**Passo 3** - Install dependencies via requirements.txt
 
 ```shell
 pip install -r requirements.txt
 ```
 
-## **Rodando o carinha**
+## **Running**
 
 ```shell
 source venv/bin/activate
 python main.py [period] [language]
 ```
 
-Valores possíveis para **period**: day, week, month, all
+Values for **period**: day, week, month, all
 
-Alguns valores para **language**: en, es, th
+Some values for **language**: en, es, th
 
-## **Exemplo json gerado**
+## **Example response**
 
 ```json
 [
@@ -66,6 +66,6 @@ Alguns valores para **language**: en, es, th
 ]
 ```
 
-## **Referências**
+## **References**
 
-- [Documentação Twitch API](https://dev.twitch.tv/docs/v5/reference/clips/#get-top-clips)
+- [Twitch API Documentation](https://dev.twitch.tv/docs/v5/reference/clips/#get-top-clips)
