@@ -18,8 +18,8 @@ def main():
     for clip in response['clips']:
         clips.append(format_clip(clip))
 
-    make_request_to_video_guy(clips)
     print('Im done!')
+    return clips
 
 
 def get_clips_from_twitch():
@@ -55,10 +55,6 @@ def download_video(url, output_filename):
     video_stream = requests.get(url, stream=True)
     with open(output_filename, "wb") as writer:
         writer.write(video_stream.content)
-
-
-def make_request_to_video_guy(clips):
-    raise NotImplementedError
 
 
 if __name__ == "__main__":
