@@ -4,7 +4,7 @@
 
 Get most viewed clips on twitch and downloads them
 
-## **Instalação**
+## **Installation**
 
 **Passo 1** - Create a virtualenv
 
